@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroModelling Club – IIT Ropar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <nav id="mainNav">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div id="logo">
+          <img src="logo.png" alt="AMC Logo" onerror="this.style.display='none'"  style="border-radius: 50%;"/>
+          <span class="nav-logo-text">AMC</span>
+        </div>
+        <div id="title">
+          <span class="club-name">AeroModelling Club</span>
+          <span class="institute">Indian Institute of Techonology,Ropar</span>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="navbar" id="navLinks">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="aboutUs.html" class="nav-link">About Us</a>
+          <a href="contactUs.html" class="nav-link">Contact Us</a>
+        </div>
+        <!-- ★ Replace YOUR_GOOGLE_FORM_LINK with your actual form URL -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSefps1wWi-WTEDekqXjBvmVuhCmRNEJLAmupnS6H5fGVkmHSQ/viewform?usp=publish-editor" target="_blank" class="join-btn">✈ Join Club</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="aboutUs.html" class="mob-link">About Us</a>
+      <a href="contactUs.html" class="mob-link">Contact Us</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSefps1wWi-WTEDekqXjBvmVuhCmRNEJLAmupnS6H5fGVkmHSQ/viewform?usp=publish-editor" target="_blank" class="mob-link join-mob">✈ Join Club</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">↑ IIT Ropar</p>
+      <h1 class="hero-title">AeroModelling<br /><span>Club</span></h1>
+      <p class="hero-sub">We build. We fly. We innovate.</p>
+      <div class="hero-btns">
+        <a href="#gallery" class="btn-primary">Explore Gallery</a>
+        <a href="#videos" class="btn-ghost">Watch Videos</a>
+      </div>
+    </div>
+    <div class="hero-grid"></div>
+  </section>
+
+  <!-- ═══════════════ ABOUT CARDS ═══════════════ -->
+  <section class="section about-section">
+    <div class="section-label">01 / About</div>
+    <h2 class="section-title">Who We Are</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🛩️</div>
+        <h3>Design &amp; Build</h3>
+        <p>We design, fabricate, and fly model aircraft ranging from basic gliders to fully autonomous UAVs.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🏆</div>
+        <h3>Competitions</h3>
+        <p>Our teams compete in national and international aeromodelling events, winning multiple podium finishes.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🔬</div>
+        <h3>Research</h3>
+        <p>We explore aerodynamics, control systems, and embedded electronics at the cutting edge of UAV tech.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PHOTO GALLERY ═══════════════ -->
+  <section class="section" id="gallery">
+    <div class="section-label">02 / Gallery</div>
+    <h2 class="section-title">Photo Gallery</h2>
+    <p class="section-sub">Moments from our flights, workshops and competitions.</p>
+
+    <div class="gallery-track-wrapper">
+      <div class="gallery-track" id="galleryTrack">
+
+        <!-- ★ ADD YOUR PHOTOS HERE — copy a <div class="gallery-slide"> block and change the src -->
+        <div class="gallery-slide">
+          <img src="img1.jpeg" alt="Club Photo 1" />
+        </div>
+        <div class="gallery-slide">
+          <img src="img2.jpeg" alt="Club Photo 2" />
+        </div>
+        <div class="gallery-slide">
+          <img src="img3.jpeg" alt="Club Photo 3" />
+        </div>
+        <div class="gallery-slide">
+          <img src="img4.jpeg" alt="Club Photo 4" />
+        </div>
+        <div class="gallery-slide">
+          <img src="img5.jpeg" alt="Club Photo 5" />
+        </div>
+        <div class="gallery-slide">
+          <img src="img6.jpeg" alt="Club Photo 6" />
+        </div>
+        <div class="gallery-slide">
+          <img src="img7.jpeg" alt="Club Photo 7" />
+        </div>
+        <div class="gallery-slide">
+          <img src="img8.jpeg" alt="Club Photo 8" />
+        </div>
+        <div class="gallery-slide">
+          <img src="img9.jpeg" alt="Club Photo 9" />
+        </div>
+        <!-- ★ Keep adding more slides below as needed -->
+
+      </div>
+    </div>
+    <div class="gallery-dots" id="galleryDots"></div>
+  </section>
+
+   
+
+  <!-- ═══════════════ VIDEO SECTION ═══════════════
+  <section class="section" id="videos">
+    <div class="section-label">03 / Videos</div>
+    <h2 class="section-title">Watch Us Fly</h2>
+    <p class="section-sub">Our latest YouTube uploads.</p>
+
+    <div class="video-grid">
+
+       ★ REPLACE YouTube video IDs below (the part after /embed/) with your real video IDs
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://youtu.be/ZV5Ic4TAn_4?si=I2iBqN6fiuvktJvq"
+            title="Video 1" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">Highlights</span>
+          <h4>Club Highlights 2024</h4>
+          <p>Watch our best flights, builds, and competition moments of the year.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2"
+            title="Video 2" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">Build</span>
+          <h4>RC Plane Build Log</h4>
+          <p>Step-by-step build of our fixed-wing competition aircraft.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3"
+            title="Video 3" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-tag">Flight</span>
+          <h4>Autonomous UAV Mission</h4>
+          <p>Our UAV completes its first fully autonomous waypoint mission.</p>
+        </div>
+      </div>
+
+      ★ Add more video cards below by copying a <div class="video-card"> block 
+
+    </div>
+  </section> -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Section – AeroModelling Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── SITE BASE (matches your existing site) ── */
+    :root {
+      --black:      #050810;
+      --surface:    #0c1120;
+      --card:       #111827;
+      --cyan:       #00d4ff;
+      --cyan-dim:   #00aacc;
+      --blue:       #1a6fe8;
+      --text:       #e4eaf8;
+      --muted:      #7a8aaa;
+      --border:     rgba(0,212,255,0.18);
+      --glow:       0 0 24px rgba(0,212,255,0.30);
+      --font-d:     'Orbitron', sans-serif;
+      --font-b:     'Exo 2', sans-serif;
+      --radius:     14px;
+      /* Instagram brand */
+      --ig-grad:    linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: var(--font-b);
+    }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--cyan-dim); border-radius: 3px; }
+
+    /* ══════════════════════════════
+       INSTAGRAM SECTION WRAPPER
+    ══════════════════════════════ */
+    .ig-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 24px 100px;
+    }
+
+    /* header */
+    .ig-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .ig-header-left {}
+    .ig-section-label {
+      font-family: var(--font-d);
+      font-size: 10px;
+      letter-spacing: 4px;
+      color: var(--cyan);
+      opacity: 0.7;
+      margin-bottom: 8px;
+    }
+    .ig-title {
+      font-family: var(--font-d);
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      line-height: 1.1;
+    }
+    .ig-logo-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--ig-grad);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ig-logo-badge svg { width: 22px; height: 22px; fill: #fff; }
+
+    .ig-handle-link {
+      font-family: var(--font-b);
+      font-size: 13px;
+      color: var(--cyan);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 8px 18px;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s, border-color 0.2s;
+      white-space: nowrap;
+    }
+    .ig-handle-link:hover { background: rgba(0,212,255,0.1); border-color: var(--cyan); }
+    .ig-handle-link .ig-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--ig-grad);
+      flex-shrink: 0;
+    }
+
+    /* ── REEL GRID ── */
+    .reel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    /* individual reel card */
+    .reel-card {
+      position: relative;
+      aspect-ratio: 9/16;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--card);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s;
+      group: true;
+    }
+    .reel-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: var(--glow), 0 20px 60px rgba(0,0,0,0.5);
+      border-color: var(--cyan);
+      z-index: 2;
+    }
+
+    /* thumbnail / cover image */
+    .reel-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .reel-card:hover .reel-thumb { transform: scale(1.07); }
+
+    /* gradient overlay */
+    .reel-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(5,8,16,0) 0%,
+        rgba(5,8,16,0.05) 40%,
+        rgba(5,8,16,0.85) 100%
+      );
+      transition: background 0.3s;
+    }
+    .reel-card:hover .reel-overlay {
+      background: linear-gradient(
+        180deg,
+        rgba(5,8,16,0.2) 0%,
+        rgba(5,8,16,0.2) 40%,
+        rgba(5,8,16,0.92) 100%
+      );
+    }
+
+    /* reel type badge top-left */
+    .reel-type-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-family: var(--font-d);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #fff;
+      background: var(--ig-grad);
+      padding: 4px 9px;
+      border-radius: 40px;
+      z-index: 3;
+    }
+
+    /* play icon center */
+    .reel-play-icon {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+    .reel-card:hover .reel-play-icon { opacity: 1; }
+    .reel-play-icon svg {
+      width: 52px;
+      height: 52px;
+      fill: rgba(255,255,255,0.9);
+      filter: drop-shadow(0 2px 12px rgba(0,0,0,0.6));
+    }
+
+    /* bottom info */
+    .reel-info {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 14px 14px 16px;
+      z-index: 3;
+      transform: translateY(4px);
+      transition: transform 0.3s;
+    }
+    .reel-card:hover .reel-info { transform: translateY(0); }
+
+    .reel-caption {
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.4;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .reel-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .reel-views {
+      font-size: 11px;
+      color: rgba(255,255,255,0.7);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .reel-views svg { width: 13px; height: 13px; fill: rgba(255,255,255,0.7); }
+
+    .reel-open-btn {
+      font-family: var(--font-d);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 5px 11px;
+      border-radius: 40px;
+      text-decoration: none;
+      backdrop-filter: blur(4px);
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .reel-open-btn:hover { background: rgba(255,255,255,0.3); }
+
+    /* ── PLACEHOLDER CARD (no image) ── */
+    .reel-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(160deg, var(--surface) 0%, var(--card) 100%);
+      color: var(--muted);
+      font-size: 12px;
+      font-family: var(--font-d);
+      letter-spacing: 1px;
+    }
+    .reel-placeholder-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: var(--ig-grad);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0.7;
+    }
+    .reel-placeholder-icon svg { width: 22px; height: 22px; fill: #fff; }
+
+    /* ── FOLLOW CTA STRIP ── */
+    .ig-cta-strip {
+      margin-top: 48px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+      padding: 28px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .ig-cta-text h3 {
+      font-family: var(--font-d);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .ig-cta-text p { font-size: 13px; color: var(--muted); }
+    .ig-follow-btn {
+      font-family: var(--font-d);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #fff;
+      background: var(--ig-grad);
+      border: none;
+      padding: 13px 30px;
+      border-radius: 40px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 24px rgba(220,39,67,0.35);
+      white-space: nowrap;
+    }
+    .ig-follow-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 36px rgba(220,39,67,0.55); }
+    .ig-follow-btn svg { width: 18px; height: 18px; fill: #fff; }
+
+    /* ── LIGHTBOX ── */
+    .ig-lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(5,8,16,0.92);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .ig-lightbox.open { opacity: 1; pointer-events: all; }
+
+    .lb-inner {
+      position: relative;
+      width: min(380px, 95vw);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      transform: scale(0.92);
+      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .ig-lightbox.open .lb-inner { transform: scale(1); }
+
+    .lb-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .lb-avatar {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--ig-grad);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .lb-avatar svg { width: 18px; height: 18px; fill: #fff; }
+    .lb-handle {
+      font-family: var(--font-d);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.5px;
+    }
+    .lb-subhandle { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    .lb-close {
+      margin-left: auto;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 22px;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px;
+      transition: color 0.2s;
+    }
+    .lb-close:hover { color: var(--text); }
+
+    .lb-media {
+      aspect-ratio: 9/16;
+      max-height: 55vh;
+      position: relative;
+      background: #000;
+      overflow: hidden;
+    }
+    .lb-media img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .lb-media-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px;
+      color: var(--muted); font-size: 13px;
+    }
+    .lb-play-big {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      border: 2px solid rgba(255,255,255,0.4);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .lb-play-big svg { width: 28px; height: 28px; fill: #fff; margin-left: 4px; }
+
+    .lb-footer { padding: 14px 16px; }
+    .lb-caption { font-size: 13px; color: var(--text); margin-bottom: 12px; line-height: 1.5; }
+    .lb-actions { display: flex; gap: 10px; align-items: center; }
+    .lb-open-ig {
+      font-family: var(--font-d);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #fff;
+      background: var(--ig-grad);
+      padding: 9px 18px;
+      border-radius: 40px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.2s;
+    }
+    .lb-open-ig:hover { transform: translateY(-2px); }
+    .lb-open-ig svg { width: 14px; height: 14px; fill: #fff; }
+    .lb-views-lb { font-size: 12px; color: var(--muted); margin-left: auto; }
+
+    /* ── SCROLL REVEAL ── */
+    .reel-card { opacity: 0; transform: translateY(30px); animation: none; }
+    .reel-card.revealed {
+      animation: revealCard 0.5s ease forwards;
+    }
+    @keyframes revealCard {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* responsive */
+    @media (max-width: 600px) {
+      .reel-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .ig-cta-strip { flex-direction: column; align-items: flex-start; padding: 22px 20px; }
+      .ig-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     INSTAGRAM REELS SECTION
+     HOW TO ADD A REEL:
+     Find the reel-grid div and copy any reel-card block.
+     Fill in:
+       data-url   = full Instagram reel/post URL
+       data-caption = caption text
+       data-views = view count string  e.g. "12.4K"
+       data-tag   = badge label e.g. Reel · Build · Flight
+     For the thumbnail: put your image in <img src="...">
+     If no image, the placeholder card is shown automatically.
+═══════════════════════════════════════════════ -->
+
+<section class="ig-section">
+
+  <!-- SECTION HEADER -->
+  <div class="ig-header">
+    <div class="ig-header-left">
+      <div class="ig-section-label">03 / Instagram</div>
+      <div class="ig-title">
+        <div class="ig-logo-badge">
+          <!-- Instagram icon -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </div>
+        Instagram Reels
+      </div>
+    </div>
+    <!-- ★ Replace href with your Instagram profile URL -->
+    <a href="https://www.instagram.com/aeromodelling_iitrpr/" target="_blank" class="ig-handle-link">
+      <span class="ig-dot"></span>
+      @aeromodelling_iitrpr
+    </a>
+  </div>
+
+  <!-- REEL GRID -->
+  <div class="reel-grid" id="reelGrid">
+
+    <!--
+      ★★★ HOW TO USE ★★★
+      Each reel-card below is one post.
+      Fill in:
+        data-url      = your Instagram reel / post URL
+        data-caption  = caption shown in lightbox
+        data-views    = e.g. "8.2K"
+        data-tag      = badge on card e.g. Reel, Build, Flight, Event
+        <img src="…"> = thumbnail image path
+      If you have no thumbnail, delete the <img> line — a placeholder shows automatically.
+    -->
+
+    <!-- CARD 1 -->
+    <div class="reel-card"
+         data-url="https://www.instagram.com/reel/DUYtbgWk6O6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+         data-caption="✈ Our latest fixed-wing aircraft takes flight for the first time! Months of hard work finally pays off. #AeroModelling #IITRopar #Aviation"
+         data-views="12.4K"
+         data-tag="Reel">
+      <div class="reel-placeholder">
+        <div class="reel-placeholder-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        Paste image src
+      </div>
+      <!-- ★ REPLACE: <img src="src/images/reel1.jpg" alt="Reel 1" class="reel-thumb" /> -->
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="reel-card"
+         data-url="https://www.instagram.com/aeromodelling_iitrpr/"
+         data-caption="🚁 Drone build session in progress! Our team working on the new quadcopter frame. #Drone #UAV #Engineering #IITRopar"
+         data-views="9.1K"
+         data-tag="Build">
+      <div class="reel-placeholder">
+        <div class="reel-placeholder-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        Paste image src
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="reel-card"
+         data-url="https://www.instagram.com/aeromodelling_iitrpr/"
+         data-caption="🏆 3rd place at SAE Aero Design 2024! Proud of the entire team for this incredible achievement. #SAEAero #Competition #AeroModelling"
+         data-views="21.8K"
+         data-tag="Event">
+      <div class="reel-placeholder">
+        <div class="reel-placeholder-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        Paste image src
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="reel-card"
+         data-url="https://www.instagram.com/aeromodelling_iitrpr/"
+         data-caption="🔧 Workshop day! Teaching first-year students the basics of foam cutting, balsa gluing and basic aerodynamics. #Workshop #IITRopar #AeroClub"
+         data-views="6.5K"
+         data-tag="Workshop">
+      <div class="reel-placeholder">
+        <div class="reel-placeholder-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        Paste image src
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="reel-card"
+         data-url="https://www.instagram.com/aeromodelling_iitrpr/"
+         data-caption="🛩️ First autonomous flight mission complete! Waypoint navigation using ArduPilot and our custom ground station software. #Autonomous #UAV #Tech"
+         data-views="18.3K"
+         data-tag="Flight">
+      <div class="reel-placeholder">
+        <div class="reel-placeholder-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        Paste image src
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="reel-card"
+         data-url="https://www.instagram.com/aeromodelling_iitrpr/"
+         data-caption="📐 Wing design and CFD analysis night at the lab! Pushing through simulation data to optimise our lift-to-drag ratio. #CFD #Aerodynamics #IITRopar"
+         data-views="7.7K"
+         data-tag="Design">
+      <div class="reel-placeholder">
+        <div class="reel-placeholder-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        Paste image src
+      </div>
+    </div>
+
+    <!-- ★ Copy a card block above to add more reels -->
+
+  </div><!-- /reel-grid -->
+
+  <!-- FOLLOW CTA -->
+  <div class="ig-cta-strip">
+    <div class="ig-cta-text" >
+      <h3>Follow us on Instagram</h3>
+      <p>Stay updated with our latest builds, flights, and behind-the-scenes moments.</p>
+    </div>
+    <a href="https://www.instagram.com/aeromodelling_iitrpr/" target="_blank" class="ig-follow-btn">
+      <svg viewBox="0 0 24 24" style=" font-size: 11px; padding: 10px 0;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      Follow
+    </a>
+  </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div class="ig-lightbox" id="igLightbox">
+  <div class="lb-inner">
+    <div class="lb-header">
+      <div class="lb-avatar">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </div>
+      <div>
+        <div class="lb-handle">aeromodelling_iitrpr</div>
+        <div class="lb-subhandle">AeroModelling Club, IIT Ropar</div>
+      </div>
+      <button class="lb-close" id="lbClose">✕</button>
+    </div>
+    <div class="lb-media" id="lbMedia">
+      <div class="lb-media-placeholder">
+        <div class="lb-play-big">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <span style="font-size:12px;color:var(--muted);">Open on Instagram to watch</span>
+      </div>
+    </div>
+    <div class="lb-footer">
+      <p class="lb-caption" id="lbCaption"></p>
+      <div class="lb-actions">
+        <a href="#" class="lb-open-ig" id="lbOpenIG" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          View on Instagram
+        </a>
+        <span class="lb-views-lb" id="lbViews"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const igSVG = `<svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>`;
+
+  const playSVG = `<svg viewBox="0 0 24 24" style="width:46px;height:46px;fill:rgba(255,255,255,0.88);filter:drop-shadow(0 2px 10px rgba(0,0,0,0.6));"><path d="M8 5v14l11-7z"/></svg>`;
+
+  const eyeSVG = `<svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:rgba(255,255,255,0.7);"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>`;
+
+  // Build cards
+  document.querySelectorAll('.reel-card').forEach((card, i) => {
+    const url     = card.dataset.url     || '#';
+    const caption = card.dataset.caption || '';
+    const views   = card.dataset.views   || '';
+    const tag     = card.dataset.tag     || 'Reel';
+    const img     = card.querySelector('img.reel-thumb');
+
+    // Overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'reel-overlay';
+    card.appendChild(overlay);
+
+    // Badge
+    const badge = document.createElement('div');
+    badge.className = 'reel-type-badge';
+    badge.textContent = tag;
+    card.appendChild(badge);
+
+    // Play icon
+    const play = document.createElement('div');
+    play.className = 'reel-play-icon';
+    play.innerHTML = playSVG;
+    card.appendChild(play);
+
+    // Bottom info
+    const info = document.createElement('div');
+    info.className = 'reel-info';
+    info.innerHTML = `
+      <div class="reel-caption">${caption}</div>
+      <div class="reel-meta">
+        <span class="reel-views">${eyeSVG} ${views}</span>
+        <a class="reel-open-btn" href="${url}" target="_blank" onclick="event.stopPropagation()">Open ↗</a>
+      </div>`;
+    card.appendChild(info);
+
+    // Click → lightbox
+    card.addEventListener('click', () => openLightbox(card));
+
+    // Scroll reveal with stagger
+    setTimeout(() => {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.style.animationDelay = (i % 6) * 0.08 + 's';
+            e.target.classList.add('revealed');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      obs.observe(card);
+    }, 0);
+  });
+
+  // Lightbox
+  const lightbox = document.getElementById('igLightbox');
+  const lbCaption = document.getElementById('lbCaption');
+  const lbOpenIG  = document.getElementById('lbOpenIG');
+  const lbViews   = document.getElementById('lbViews');
+  const lbMedia   = document.getElementById('lbMedia');
+
+  function openLightbox(card) {
+    const url     = card.dataset.url     || '#';
+    const caption = card.dataset.caption || '';
+    const views   = card.dataset.views   || '';
+    const img     = card.querySelector('img.reel-thumb');
+
+    lbCaption.textContent = caption;
+    lbOpenIG.href = url;
+    lbViews.textContent = views ? '👁 ' + views + ' views' : '';
+
+    // Media area
+    lbMedia.innerHTML = '';
+    if (img && img.src && !img.src.includes('undefined')) {
+      const i2 = document.createElement('img');
+      i2.src = img.src;
+      i2.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+      lbMedia.appendChild(i2);
+    } else {
+      lbMedia.innerHTML = `<div class="lb-media-placeholder">
+        <div class="lb-play-big"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></div>
+        <span style="font-size:12px;color:var(--muted);">Open on Instagram to watch</span>
+      </div>`;
+    }
+
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  document.getElementById('lbClose').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+</script>
+
+</body>
+</html>
+
+  <!-- ═══════════════ JOIN ═══════════════ -->
+  <section class="section join-section" id="join">
+    <div class="section-label">04 / Join</div>
+    <h2 class="section-title">Become a Member</h2>
+    <p class="section-sub">Whether you're a builder, coder, or just curious — there's a place for you in the club.</p>
+    <div class="join-cta-box">
+      <div class="join-cta-icons"><img src="logo.png" alt="" style="height: 100px; border-radius:50%;"></div>
+      <p class="join-cta-text">Fill out our membership form and we'll get in touch with you shortly!</p>
+      <!-- ★ Replace YOUR_GOOGLE_FORM_LINK with your actual Google Form URL -->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSefps1wWi-WTEDekqXjBvmVuhCmRNEJLAmupnS6H5fGVkmHSQ/viewform?usp=publish-editor" target="_blank" class="join-big-btn">Apply Now ✈</a>
+    </div>
+  </section>
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer>
+    <div class="footer-inner">
+      
+      <div class="footer-brand">
+        <div class="lgnm">
+          <div class="lgimg">
+            <img src="logo.png" alt="" style="margin:0;padding:0;height:60px;">
+          </div>
+          <span class="footer-logo-text">AMC</span>
+        </div>
+        <p>AeroModelling Club<br /><span>Indian Institute of Technology , Ropar</span></p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSefps1wWi-WTEDekqXjBvmVuhCmRNEJLAmupnS6H5fGVkmHSQ/viewform?usp=publish-editor" target="_blank">Join Club</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/aeromodelling-club-iit-ropar/" target="_blank" class="social-pill"><img src="linkedin.png" alt="linkedin_png" style="margin:0; padding:0;height:10px; padding-right:10px;">LinkedIn</a>
+        <a href="https://www.instagram.com/aeromodelling_iitrpr/" target="_blank" class="social-pill ig"><img src="instagram.png" alt="linkeding_png" style="margin:0; padding:0;height:10px; padding-right:10px;">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bar">© 2026 AeroModelling Club, Indian Institute of Technology,Ropar.<br>All rights reserved.</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
