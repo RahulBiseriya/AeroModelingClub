@@ -1,0 +1,52 @@
+
+:root{
+--cyan:#00d4ff;
+--bg:#050810;
+}
+body{
+margin:0;overflow:hidden;background:var(--bg);
+font-family:Orbitron,Arial,sans-serif;color:white;
+}
+#bg{
+position:fixed;inset:0;
+}
+.hud{
+position:absolute;inset:0;
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+backdrop-filter:blur(2px);
+}
+h1{
+letter-spacing:4px;
+text-shadow:0 0 20px var(--cyan);
+}
+.panel{
+display:grid;
+grid-template-columns:repeat(2,220px);
+gap:15px;
+margin:20px;
+}
+.sys,#launch{
+padding:15px;
+border:1px solid var(--cyan);
+background:#0b1320;
+color:var(--cyan);
+cursor:pointer;
+font-weight:bold;
+}
+.sys.active{
+background:var(--cyan);
+color:black;
+box-shadow:0 0 25px var(--cyan);
+}
+#status{
+margin:20px;
+font-size:18px;
+}
+.takeoff{
+animation:zoom 3s linear forwards;
+}
+@keyframes zoom{
+from{transform:scale(1)}
+to{transform:scale(1.4)}
+}
